@@ -8,12 +8,10 @@
   <link rel="stylesheet" href="style1.css" />
   <title>Hulk.cnc</title>
 </head>
-<body id="body" onclick="changeLanguage('body')"
-herf = "">
+<body id="body" onclick="changeLanguage('body')">
 
   <div class="color_bord"></div>
   <img id="corner-image" src="img/image.png" />
-  <div id="bakgraund"></div>
   
   <header class="header">
     <img src="img/mitka.png" class="logo" alt="Logo" />
@@ -46,17 +44,16 @@ herf = "">
   <main class="main_ua">
     <article>
       <h1 class="name">ЧПУ ФРЕЗЕРУВАННЯ </h1>
+      <p class="text">Ми можемо виготовити деталі будь-якої складності,
+        від простих до високоточних з використанням різних
+        матеріалів, таких як сталь, алюміній, мідь,
+        латунь та інші метали.</p>
+      
       <ul>
         <li>Конструкторські послуги</li>
         <li>Працюємо з твердими металами</li>
         <li>Виготовляємо штампи та прес-форми</li>
       </ul>
-      
-      <p class="text">Ми можемо виготовити деталі будь-якої складності,
-        від простих до високоточних з використанням різних
-        матеріалів,таких як сталь,алюміній,мідь,
-        латунь та інші метали.</p>
-      
       
     </article>
 
@@ -109,7 +106,13 @@ herf = "">
       pop.classList.remove("show");
     }
 
-    
+    if (document.body.clientWidth < 400) {
+      
+    const ссылка = { href: "/ru" };
+    // Ваш код, который использует объект ссылки
+
+
+}
 
     function hideButtons() {
       var buttons = document.querySelectorAll(".bottom");
