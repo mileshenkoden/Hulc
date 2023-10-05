@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap');
 body  {
   padding: 0;
   margin: 0;
@@ -6,6 +7,7 @@ body  {
   background-repeat: no-repeat; /* Забороняємо повторення фону */
   background-attachment: fixed; /* Фон зафіксований, щоб не прокручувався зі сторінкою */
   background-size: cover; /* Заповнюємо всю доступну область екрану градієнтом */
+  font-family: "Manrope", sans-serif;
 }
 
 #corner-image {
@@ -51,7 +53,7 @@ img.logo{
 }
 .contact_img {
   margin-top: 5px;
-  margin-right: 5px;
+  margin-right: 10px;
   display: flex;
 }
 img.contact{
@@ -78,7 +80,6 @@ article{
   padding-bottom: 10px;
   font-size:16px;
   margin-left: 5%;
-  font-family: "Arial", sans-serif;
   font-weight: bold;
   text-align: justify;
 max-width: 450px;
@@ -202,7 +203,7 @@ opacity: 1;
 .language-content.show {
   display: block;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   main{margin-left: 4% ;}
   article{
     width: 95%;
@@ -227,9 +228,12 @@ opacity: 1;
   #bakgraund{opacity: 0;}
   body{
     background: url(img/Background_m.jpg);
+    background-repeat: no-repeat; /* Забороняємо повторення фону */
+    background-attachment: fixed; /* Фон зафіксований, щоб не прокручувався зі сторінкою */
+    background-size: cover; /* Заповнюємо всю доступну область екрану градієнтом */
   }
     .bottom{
-      width: 280px;
+      width: 320px;
      
     }
 }
