@@ -203,6 +203,9 @@ opacity: 1;
 .language-content.show {
   display: block;
 }
+@media screen and (max-width: 1000px){
+  #bakgraund{opacity: 0;}
+}
 @media screen and (max-width: 450px) {
   main{margin-left: 4% ;}
   article{
