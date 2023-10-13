@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,10 +8,6 @@
   <title>Hulk.cnc</title>
 </head>
 <body id="body" onclick="changeLanguage('body')">
-
-  <body id="body" onclick="changeLanguage('body')"
-herf = "">
-
   <div class="color_bord"></div>
   <img id="corner-image" src="../img/image.png" />
   <div id="bakgraund"></div>
@@ -20,12 +15,11 @@ herf = "">
   <header class="header">
     <img src="../img/mitka.png" class="logo" alt="Logo" />
     <div class="contact_img">
-      <div >
-      <a href="https://t.me/HulkCNC"><img src="../img/Telegram.png" alt="Telegram" class="contact" /></a>
-      <a href="viber://add?number=0980440968"><img src="../img/Viber.png" alt="Viber" class="contact" /></a>
-      <a href="https://mail.google.com/mail/u/0/#search/karandahh%40gmail.com?compose=new"><img src="../img/emeil.png" alt="Cellphone" class="contact" /></a></div>
-      
-    
+      <div>
+        <a href="https://t.me/HulkCNC" target="_blank"><img src="../img/Telegram.png" alt="Telegram" class="contact" /></a>
+        <a href="viber://add?number=0980440968" target="_blank"><img src="../img/Viber.png" alt="Viber" class="contact" /></a>
+        <a href="https://mail.google.com/mail/u/0/#search/karandahh%40gmail.com?compose=new" target="_blank"><img src="../img/emeil.png" alt="Cellphone" class="contact" /></a>
+      </div>
     
     <div class="pop" onclick="togglePopup(event)">
       <!-- Image for the popup -->
@@ -43,7 +37,6 @@ herf = "">
         <a class="padi" href="../eng/index.html" onclick="changeLanguage('en')">ENG</a>
       </span>
     </div>
-  </div>
   </header>
 
   <main class="main_ua">
@@ -59,15 +52,39 @@ herf = "">
         <li>Работаем с жесткими металлами</li>
         <li>Производим штампы и пресс-формы.</li>
       </ul>
-      
     </article>
 
     <article>
-      <button class="bottom" >Рассчитать стоимость</button>
+      <a class="bottom" href="https://docs.google.com/forms/d/e/1FAIpQLSfkOBa9EkNd5LnltwHSQruje336VM6lGsTQ1MbRjinqQ2ZrjA/viewform" >Рассчитать стоимость</a>
     </article>
   </main>
 
   <script>
+    // Функція для зміни зображення при кліку на будь-яку точку екрану
+    document.addEventListener('DOMContentLoaded', function () {
+  var languageIcon = document.getElementById("languageIcon");
+  var my_popup = document.getElementById("my_popup");
+
+  languageIcon.addEventListener('click', function (event) {
+    event.stopPropagation(); // Предотвратить всплытие события
+    my_popup.classList.toggle("show");
+  });
+
+  document.addEventListener('click', function () {
+    if (my_popup.classList.contains("show")) {
+      my_popup.classList.remove("show");
+    }
+  });
+  
+});
+  document.body.addEventListener('click', function() {
+    var languageIcon = document.getElementById("languageIcon"); 
+        languageIcon.src = "../img/lang_ru.png"; // Змінюємо на потрібне зображення
+    }
+    );
+
+    
+
     function togglePopup(event) {
       event.stopPropagation();
       var pop = document.getElementById("my_popup");
@@ -79,53 +96,28 @@ herf = "">
       var pop = document.getElementById("my_popup");
       var mainUa = document.querySelector(".main_ua");
       var mainRu = document.querySelector(".main_ru");
-      var mainEng = document.querySelector(".main_eng");;
+      var mainEng = document.querySelector(".main_eng");
       switch (language) {
         case "main":
           languageIcon.src = "../img/lang_main.png";
-          
-    
           break;
         case "uk":
           languageIcon.src = "../img/lang_ua.png";
-          
-        
           break;
         case "ru":
           languageIcon.src = "../img/lang_ru.png";
-          
-          
           break;
         case "en":
           languageIcon.src = "../img/lang_eng.png";
-        
-         
-          break;
-          
-         
-        
-          
           break;
       }
       ul.classList.toggle("show");
       pop.classList.remove("show");
     }
 
-    if (document.body.clientWidth < 400) {
-      
-    const ссылка = { href: "/ru" };
-    // Ваш код, который использует объект ссылки
+    
 
-
-}
-
-    function hideButtons() {
-      var buttons = document.querySelectorAll(".bottom");
-      buttons.forEach(function(button) {
-        button.style.display = "none";
-      });
-    }
+    
   </script>
 </body>
-
 </html>

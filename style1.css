@@ -15,24 +15,27 @@ body  {
   opacity: 1;
   right: 0;
   bottom: 0;
-  height: 65%; /* Змініть розмір зображення на ваш вибір */
+  height: 65%;
   width: auto;
-  z-index: 1; /* Забезпечуємо, що зображення буде поверх інших елементів */
+  z-index: 1;
+  
 }
+
 .text{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-#bakgraund{
+#bakgraund {
   position: fixed;
   opacity: 0.2;
+  pointer-events: none; /* Додаємо цей стиль для вимкнення подій на елементі */
   padding-left: 0;
   height: 100%; /* Змініть розмір зображення на ваш вибір */
   width: 55%;
   z-index: 1;
   background: #6f6f6ff4;
-  
 }
+
 
 header {
   width: 100%;
@@ -60,11 +63,23 @@ img.contact{
   height: 45px;
   margin-right: 5px;
 }
-.bottom{
+.bottom {
+  position: relative;
+  display: inline-block;
   width: 240px;
   height: 45px;
+  line-height: 45px;
+  text-align: center;
   border-radius: 20px;
+  background-color: #fef1ff;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  display: block; /* Змінюємо на block, щоб зробити кнопки натисканнями */
 }
+
+
+
 .p{top: 40px;}
 
 main{
