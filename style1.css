@@ -146,6 +146,7 @@ li::before {
   left: 50%;
   transform: translateX(-50%);
   background-size: cover;
+  font-family: "Manrope", sans-serif;
 }
 
 /* Show class for displaying the popup window */
@@ -181,6 +182,7 @@ li::before {
   display: block;
   margin-bottom: 1.3vh;
   font-size: 18px;
+  font-family: "Manrope", sans-serif;
 }
 
 .pop .popuptext a:hover {
@@ -188,6 +190,7 @@ li::before {
 }
 .pop .popuptext img {
   display: none;
+  
 }
 .languageIcon {
   width: 90px;
